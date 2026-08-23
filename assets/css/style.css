@@ -1,0 +1,236 @@
+/* 
+   Justin N. Carlson — custom academic site
+   Based on the visual structure of the open-source Ordered List Minimal theme.
+   Keep this file unchanged when editing normal site content.
+*/
+
+body {
+  background-color: #fff;
+  padding: 50px;
+  font: 15px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  color: #595959;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  margin: 0 0 20px;
+}
+
+p, ul, ol {
+  margin: 0 0 20px;
+}
+
+h1, h2, h3 {
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: #393939;
+  font-weight: 500;
+  font-size: 24px;
+  padding-top: 2px;
+}
+
+h3 {
+  color: #494949;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 28px;
+}
+
+a {
+  color: #39c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+code {
+  font-family: Monaco, Consolas, "Liberation Mono", monospace;
+  color: #333;
+  font-size: 0.9em;
+}
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  width: 270px;
+  float: left;
+  position: fixed;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 13px;
+  line-height: 1.35;
+  margin-bottom: 22px;
+}
+
+.headshot {
+  width: 220px;
+  height: auto;
+  display: block;
+  margin: 0 0 22px;
+  border-radius: 2px;
+}
+
+nav {
+  width: 270px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  display: block;
+  padding: 8px 10px;
+  border-top: 1px solid #e5e5e5;
+  font-size: 13px;
+}
+
+nav a:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.sidebar-links {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.sidebar-links a {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.placeholder-note {
+  width: 230px;
+  margin-top: 25px;
+  padding: 10px;
+  background: #f8f8f8;
+  border: 1px solid #e5e5e5;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+main {
+  width: 560px;
+  float: right;
+  padding-bottom: 50px;
+}
+
+main section {
+  margin-bottom: 48px;
+  scroll-margin-top: 30px;
+}
+
+main section + section {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 30px;
+}
+
+ul {
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 7px;
+}
+
+.edit-note {
+  background: #f8f8f8;
+  border-left: 3px solid #ddd;
+  padding: 10px 12px;
+  font-size: 12px;
+}
+
+footer {
+  width: 270px;
+  float: left;
+  position: fixed;
+  bottom: 35px;
+  font-size: 11px;
+  color: #888;
+}
+
+.theme-credit {
+  margin-top: 4px;
+}
+
+@media print, screen and (max-width: 960px) {
+  div.wrapper {
+    width: auto;
+    margin: 0;
+  }
+
+  header, main, footer {
+    float: none;
+    position: static;
+    width: auto;
+  }
+
+  header {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .headshot {
+    width: 220px;
+  }
+
+  nav {
+    width: 270px;
+  }
+
+  main {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 30px;
+  }
+
+  footer {
+    margin-top: 30px;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+
+  .headshot {
+    width: 180px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  main section {
+    margin-bottom: 38px;
+  }
+}
+
+@media print {
+  body {
+    padding: 0.4in;
+    font-size: 12pt;
+    color: #444;
+  }
+
+  .placeholder-note,
+  nav {
+    display: none;
+  }
+}

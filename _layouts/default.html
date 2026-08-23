@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Justin N. Carlson</h1>
+      <p class="subtitle">Archaeologist · Anthropologist · Geoarchaeologist</p>
+
+      <img class="headshot" src="{{ '/assets/images/justin-placeholder.jpg' | relative_url }}" alt="Placeholder portrait of Justin Carlson">
+
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="sidebar-links">
+        <a href="https://www.humboldt.edu/anthropology/justin-n-carlson">Cal Poly Humboldt profile</a>
+        <a href="https://www.humboldt.edu/cultural-resources-facility/justin-carlson">Cultural Resources Facility</a>
+        <a href="mailto:Justin.Carlson@humboldt.edu">Email Justin</a>
+      </div>
+
+      <p class="placeholder-note">
+        <strong>Photo placeholder</strong><br>
+        Replace <code>assets/images/justin-placeholder.jpg</code> with Justin's preferred professional photograph.
+      </p>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <p>© {{ 'now' | date: "%Y" }} Justin N. Carlson</p>
+      <p class="theme-credit">Layout inspired by the <a href="https://github.com/orderedlist/minimal">Minimal theme by Ordered List</a>.</p>
+    </footer>
+  </div>
+</body>
+</html>
