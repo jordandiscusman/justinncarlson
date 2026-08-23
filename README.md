@@ -1,53 +1,38 @@
-# Justin N. Carlson — justinncarlson.com
+# Justin N. Carlson website
 
-This is the first working version of Justin's personal academic website.
+This version intentionally follows the structure and styling of Emma Templeton's
+website much more closely. It uses the Ordered List "Minimal" GitHub Pages layout:
 
-## Design
+- fixed 270px left column
+- 500px main content column
+- 860px overall wrapper
+- 14px system font
+- #39c blue links
+- white background
+- simple H1 section headings
+- fixed footer
+- three-button link strip beneath the headshot
 
-The layout is intentionally based on the look and structure of Emma Templeton's
-site and the open-source **Minimal** GitHub Pages theme by Ordered List.
+## To replace the placeholder photo
 
-Official theme:
-https://github.com/orderedlist/minimal
+Replace `images/headshot.jpg` with Justin's real photograph and KEEP THE SAME FILE NAME.
 
-The original Minimal theme is released under a Creative Commons Attribution-ShareAlike
-3.0 license. This project uses a customized layout inspired by that theme.
+## To edit the text
 
-## The easiest way to edit the site
+Open `index.html` in GitHub, click the pencil icon, edit the wording, then click
+"Commit changes."
 
-Most normal changes should be made in **`index.md`**.
+## Uploading this version
 
-You can edit:
+Delete the old website files from the repository and upload the CONTENTS of this
+folder to the root of `jordandiscusman.github.io`.
 
-- Biography
-- Research interests
-- Publications
-- Projects
-- Education
-- Contact information
+The root of the repository should contain:
 
-You should normally **not edit `assets/css/style.css`**. That file controls the appearance.
+- index.html
+- stylesheets/
+- javascripts/
+- images/
+- README.md
 
-## Replacing Justin's photograph
-
-Replace:
-
-`assets/images/justin-placeholder.jpg`
-
-with the preferred photograph and keep the same filename, or change the image
-filename in `_layouts/default.html`.
-
-## Putting this on justinncarlson.com
-
-The intended hosting method is GitHub Pages. The domain can remain
-`justinncarlson.com`; the domain's DNS settings will eventually be pointed to
-the GitHub Pages site.
-
-## Planned next steps
-
-1. Replace the placeholder photograph.
-2. Add Justin's complete CV.
-3. Add a complete publication list.
-4. Add selected archaeological projects and photographs.
-5. Add Google Scholar / ORCID / other professional links if Justin wants them.
-6. Fine-tune typography and spacing against the Emma Templeton site.
+GitHub Pages should then rebuild automatically.
