@@ -149,10 +149,13 @@ header ul a {
   text-align:center;
   padding-top:6px;
   height:34px;
+  transition:color 0.2s ease, background-color 0.2s ease;
 }
 
-header ul a:hover {
-  color:#999;
+header ul a:hover,
+header ul a:focus-visible {
+  color:#756449;
+  background-color:#eee9df;
 }
 
 header ul a:active {
@@ -173,6 +176,12 @@ header ul a strong {
   font-size:14px;
   display:block;
   color:#222;
+  transition:color 0.2s ease;
+}
+
+header ul a:hover strong,
+header ul a:focus-visible strong {
+  color:#756449;
 }
 
 section {
@@ -278,7 +287,6 @@ footer {
   }
 }
 
-
 .linkedin-logo {
   display:block;
   width:16px;
@@ -293,5 +301,3 @@ footer {
   font-family:Arial, sans-serif;
   text-align:center;
 }
-
-
