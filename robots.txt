@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jordandiscusman.github.io/justinncarlson/sitemap.xml
+Sitemap: https://www.justinncarlson.com/sitemap.xml
