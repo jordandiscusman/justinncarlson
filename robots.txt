@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jordandiscusman.github.io/justinncarlson/sitemap.xml
